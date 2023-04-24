@@ -2,7 +2,7 @@
 
 julia_version = "1.10.0-DEV"
 manifest_format = "2.0"
-project_hash = "e54ef25b435010fb08d6c8b44db0f1de9d476a4e"
+project_hash = "e2a7f8620ae85bb9c6adeb19e2bae1eef1395aaf"
 
 [[deps.ARFFFiles]]
 deps = ["CategoricalArrays", "Dates", "Parsers", "Tables"]
@@ -2282,9 +2282,15 @@ version = "0.3.2"
 
 [[deps.Ratios]]
 deps = ["Requires"]
-git-tree-sha1 = "dc84268fe0e3335a62e315a3a7cf2afa7178a734"
+git-tree-sha1 = "c932dbf94ee68b1d225d67f647d3734a1a6dd161"
+repo-rev = "kc/extension"
+repo-url = "https://github.com/KristofferC/Ratios.jl"
 uuid = "c84ed2f1-dad5-54f0-aa8e-dbefe2724439"
 version = "0.4.3"
+weakdeps = ["FixedPointNumbers"]
+
+    [deps.Ratios.extensions]
+    RatiosFixedPointNumbersExt = "FixedPointNumbers"
 
 [[deps.ReadStatTables]]
 deps = ["CEnum", "DataAPI", "Dates", "InlineStrings", "PooledArrays", "PrettyTables", "ReadStat_jll", "SentinelArrays", "StructArrays", "Tables"]
